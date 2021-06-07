@@ -9,13 +9,13 @@ import Signin from './components/Signin';
 import ChatRoom from './components/ChatRoom';
 
 firebase.initializeApp({
-	apiKey: 'AIzaSyAbqXxAI3NKI2l64_tjjKG0IwL0iqACCYg',
-	authDomain: 'react-with-firebase-913fb.firebaseapp.com',
-	projectId: 'react-with-firebase-913fb',
-	storageBucket: 'react-with-firebase-913fb.appspot.com',
-	messagingSenderId: '305595907358',
-	appId: '1:305595907358:web:5e7ef7d7588198f9cc1d0f',
-	measurementId: 'G-W8QK5E0705',
+	apiKey: process.env.apiKey,
+	authDomain: process.env.authDomain,
+	projectId: process.env.projectId,
+	storageBucket: process.env.storageBucket,
+	messagingSenderId: process.env.messagingSenderId,
+	appId: process.env.appId,
+	measurementId: process.env.measurementId,
 });
 
 const auth = firebase.auth();
