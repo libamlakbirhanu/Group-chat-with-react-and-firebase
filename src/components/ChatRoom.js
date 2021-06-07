@@ -40,7 +40,9 @@ export default function ChatRoom() {
 					value={formValue}
 					onChange={(e) => setFormValue(e.target.value)}
 				/>
-				<button type="submit">✈</button>
+				<button type="submit" disabled={formValue === '' ? true : false}>
+					✈
+				</button>
 			</form>
 		</>
 	);
