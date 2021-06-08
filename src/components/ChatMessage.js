@@ -10,7 +10,7 @@ export default function ChatMessage(props) {
 		<>
 			<div className={`message ${messageClass}`}>
 				<div>
-					<span>{auth.currentUser.displayName.split(' ')[0]}</span>
+					<span>{props.message.author}</span>
 					<p>{text}</p>
 				</div>
 			</div>

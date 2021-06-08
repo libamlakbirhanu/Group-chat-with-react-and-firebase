@@ -4,6 +4,7 @@ import 'firebase/auth';
 export default async function SendMessage(
 	e,
 	value,
+	author,
 	messagesRef,
 	updateForm,
 	dummy
@@ -15,6 +16,7 @@ export default async function SendMessage(
 
 	await messagesRef.add({
 		text: value,
+		author: author,
 		createdAt: firebase.firestore.FieldValue.serverTimestamp(),
 		uid,
 	});
