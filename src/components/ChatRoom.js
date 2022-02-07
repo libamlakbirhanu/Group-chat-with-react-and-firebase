@@ -26,7 +26,7 @@ export default function ChatRoom() {
 	return (
 		<>
 			<header>
-				<h1 className="Logo">Dirty talk</h1>
+				<h1 className="Logo">Group Chat</h1>
 				<Signout />
 			</header>
 			<main>
